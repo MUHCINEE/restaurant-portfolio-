@@ -9,13 +9,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Jost:wght@300;400;500;600&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="logos/logo.png">
 </head>
 <body>
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <a href="#top" class="nav__brand">
-    <span class="nav__mark"><img src="logos/logo.jpg" alt="Ô Rendez-Vous"></span>
+    <span class="nav__mark"><img src="logos/logo.png" alt="Ô Rendez-Vous"></span>
     Ô Rendez-Vous
   </a>
   <nav>
@@ -24,6 +25,7 @@
       <li><a href="#histoire" data-i18n="nav.story">L'histoire</a></li>
       <li><a href="#ambiance" data-i18n="nav.ambiance">L'ambiance</a></li>
       <li><a href="#reserver" data-i18n="nav.reserve">Réserver</a></li>
+      <li><a href="#avis" data-i18n="nav.reviews">Avis</a></li>
     </ul>
   </nav>
 
@@ -50,6 +52,7 @@
     <div class="hero__actions" data-reveal>
       <a href="https://drive.google.com/file/d/1eJAhyzQ-kJ7-TSvDsBRWPRPSslv9kQiN/view" class="btn" data-i18n="hero.seeMenu">Voir la carte</a>
       <a href="#reserver" class="btn btn--gold" data-i18n="hero.reserveTable">Réserver une table</a>
+      <a href="https://glovo.go.link/open?link_type=store&store_id=530636&adjust_t=s321jkn" target="_blank" rel="noopener noreferrer" class="btn" data-i18n="hero.orderGlovo">Commander sur Glovo</a>
     </div>
   </div>
   <div class="hero__scroll">
@@ -57,7 +60,6 @@
     <span class="hero__scroll-line"><i></i></span>
   </div>
 </section>
-
 <!-- ============ MENU HIGHLIGHT ============ -->
 <section class="section" id="carte">
   <div class="wrap split">
@@ -200,13 +202,70 @@
     <a href="tel:+212 6 61 66 34 14" class="btn btn--gold" data-i18n="hero.reserveTable">Réserver une table</a>
   </div>
 </section>
+<!-- ============ CLIENT REVIEWS ============ -->
+<section class="section reviews" id="avis">
+  <div class="wrap">
+    <div class="section-head center" data-reveal>
+      <span class="kicker" style="justify-content:center" data-i18n="reviews.kicker">Google Avis</span>
+      <h2 data-i18n="reviews.title">Ce que disent nos clients</h2>
+      <p class="lede" style="margin-inline:auto;text-align:center" data-i18n="reviews.desc">268 avis, une note qui ne bouge pas : 4,9 sur 5.</p>
+    </div>
 
+    <div class="reviews__grid">
+
+      <article class="review" data-reveal>
+        <div class="review__head">
+          <span class="review__avatar">K</span>
+          <div class="review__id">
+            <span class="review__name">Kayla .</span>
+            <span class="review__stars" aria-label="5 sur 5 étoiles">★★★★★</span>
+          </div>
+          <span class="review__badge" data-i18n="reviews.badge">Avis Google</span>
+        </div>
+        <p class="review__text" data-i18n="reviews.r1">«This is a wonderful place to eat with fresh food and various options. We enjoyed the chicken Milanese, brioche sandwich, and chicken in mustard sauce. Everything was delicious and cooked perfectly, including the nicely crisped potatoes »</p>
+        <span class="review__date" data-i18n="reviews.d1">Il y a 2 semaines</span>
+      </article>
+
+      <article class="review" data-reveal>
+        <div class="review__head">
+          <span class="review__avatar">S</span>
+          <div class="review__id">
+            <span class="review__name"> Sonan .</span>
+            <span class="review__stars" aria-label="5 sur 5 étoiles">★★★★★</span>
+          </div>
+          <span class="review__badge" data-i18n="reviews.badge">Avis Google</span>
+        </div>
+        <p class="review__text" data-i18n="reviews.r2">« 10/10 The ambience, The food, The service everything is just Top Notch . 100% recommended if you’re in Tangeir  i would highly suggest you to come and enjoy the food here  »</p>
+        <span class="review__date" data-i18n="reviews.d2">Il y a 1 mois</span>
+      </article>
+
+      <article class="review" data-reveal>
+        <div class="review__head">
+          <span class="review__avatar">S</span>
+          <div class="review__id">
+            <span class="review__name">Sergi .</span>
+            <span class="review__stars" aria-label="5 sur 5 étoiles">★★★★★</span>
+          </div>
+          <span class="review__badge" data-i18n="reviews.badge">Avis Google</span>
+        </div>
+        <p class="review__text" data-i18n="reviews.r3">« What an amazing discovery in Tangier. We travel frequently for work and eat all over the world, and this restaurant is one of my favorites I’ve discovered so far. Everything is prepared to perfection and overall the place has so much class, from the food to the service to the playlist. If I’m ever back here, I’ll be sure to stop by again!»</p>
+        <span class="review__date" data-i18n="reviews.d3">Il y a 3 semaines</span>
+      </article>
+
+    </div>
+
+    <div class="reviews__cta" data-reveal>
+      <a href="https://www.google.com/maps/place/Ô+rendez-vous+Restaurant/@35.7770213,-5.8110351,17z/data=!4m15!1m8!3m7!1s0xd0c7f6e4848b839:0x2b6333ba11c8a704!2sÔ+rendez-vous+Restaurant!8m2!3d35.7770213!4d-5.8110351!10e9!16s%2Fg%2F11xrm136b5!3m5!1s0xd0c7f6e4848b839:0x2b6333ba11c8a704!8m2!3d35.7770213!4d-5.8110351!16s%2Fg%2F11xrm136b5?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn btn--gold" data-i18n="reviews.cta">Voir tous les avis Google</a>
+    </div>
+  </div>
+</section>
+<hr class="section-divider">
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="wrap">
     <div class="footer__top">
       <div class="footer__brand">
-        <span class="nav__mark"><img src="logos/logo.jpg" alt="Ô Rendez-Vous"></span>
+        <span class="nav__mark"><img src="logos/logo.png" alt="Ô Rendez-Vous"></span>
         Ô Rendez-Vous
       </div>
       <div class="footer__links">

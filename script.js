@@ -185,7 +185,19 @@
       "footer.visit": "Visiter",
       "footer.follow": "Suivre",
       "footer.copyright": "© 2026 Ô Rendez-Vous — Néo-bistrot, Tanger",
-      "footer.crafted": "Site conçu avec soin"
+      "footer.crafted": "Site conçu avec soin",
+      "hero.orderGlovo": "Commander sur Glovo",
+            "reviews.kicker": "Avis Google",
+        "reviews.title": "Ce que disent nos clients",
+        "reviews.desc": "268 avis, une note qui ne bouge pas : 4,9 sur 5.",
+        "reviews.badge": "Avis Google",
+        "reviews.r1": "« This is a wonderful place to eat with fresh food and various options. We enjoyed the chicken Milanese, brioche sandwich, and chicken in mustard sauce. Everything was delicious and cooked perfectly, including the nicely crisped potatoes »",
+        "reviews.d1": "Il y a 2 semaines",
+        "reviews.r2": "« 10/10 The ambience, The food, The service everything is just Top Notch . 100% recommended if you're in Tangeir i would highly suggest you to come and enjoy the food here »",
+        "reviews.d2": "Il y a 1 mois",
+        "reviews.r3": "« What an amazing discovery in Tangier. We travel frequently for work and eat all over the world, and this restaurant is one of my favorites I've discovered so far. Everything is prepared to perfection and overall the place has so much class, from the food to the service to the playlist. If I'm ever back here, I'll be sure to stop by again! »",
+        "reviews.d3": "Il y a 3 semaines",
+        "reviews.cta": "Voir tous les avis Google"
     },
     ar: {
       "nav.menu": "قائمة الطعام",
@@ -232,7 +244,19 @@
       "footer.visit": "زيارة",
       "footer.follow": "تابعنا",
       "footer.copyright": "© 2026 Ô Rendez-Vous — نيو بيسترو، طنجة",
-      "footer.crafted": "تم التصميم بعناية"
+      "footer.crafted": "تم التصميم بعناية",
+      "hero.orderGlovo": "الطلب عبر جلوفو",
+            "reviews.kicker": "آراء جوجل",
+        "reviews.title": "ما يقوله زبناؤنا",
+        "reviews.desc": "268 تقييماً، بنتيجة ثابتة: 4,9 من 5.",
+        "reviews.badge": "تقييم جوجل",
+        "reviews.r1": "« مكان رائع لتناول الطعام مع أطباق طازجة وخيارات متنوعة. استمتعنا بالدجاج على الطريقة الميلانية، وساندويتش البريوش، والدجاج بصلصة الخردل. كان كل شيء لذيذاً ومطبوخاً بإتقان »",
+        "reviews.d1": "منذ أسبوعين",
+        "reviews.r2": "« 10/10 الأجواء، الطعام، والخدمة.. كل شيء على أعلى مستوى. أنصح به بنسبة 100% إذا كنت في طنجة »",
+        "reviews.d2": "منذ شهر",
+        "reviews.r3": "« اكتشاف رائع في طنجة! نسافر كثيراً بحكم العمل وناكل في مختلف أنحاء العالم، وهذا المطعم من أفضل الأماكن التي اكتشفتها. كل شيء محضر بإتقان والمكان يتمتع برقي كبير »",
+        "reviews.d3": "منذ 3 أسابيع",
+        "reviews.cta": "عرض جميع تقييمات جوجل"
     }
   };
 

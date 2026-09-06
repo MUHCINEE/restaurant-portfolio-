@@ -36,6 +36,39 @@
   --gold:          #a8722a; 
   --gold-soft:     rgba(168, 114, 42, 0.3);
 }
+/* ==========================================================================
+   Hero & CTA — always dark, regardless of active theme
+   These two sections sit on top of full-bleed photos, so their palette
+   is locked and does not follow [data-theme="light"].
+   ========================================================================== */
+.hero,
+.cta {
+  --charcoal:      #100e0c;
+  --charcoal-2:    #17140f;
+  --panel:         #1c1812;
+  --cream:         #efe8da;
+  --stone:         #9c9284;
+  --gold:          #cd9a52;
+  --gold-soft:     rgba(205, 154, 82, 0.35);
+  --line:          rgba(239, 232, 218, 0.14);
+  --line-strong:   rgba(239, 232, 218, 0.28);
+
+  color: var(--cream);
+}
+
+
+.hero__scrim{
+  background:
+    linear-gradient(180deg, rgba(12,10,8,0.55) 0%, rgba(12,10,8,0.35) 30%, rgba(12,10,8,0.55) 68%, #100e0c 100%),
+    linear-gradient(90deg, rgba(10,9,7,0.75) 0%, rgba(10,9,7,0.15) 55%);
+}
+
+.cta{
+  background: #1c1812;
+}
+.cta__bg{
+  opacity: 0.16;
+}
 *, *::before, *::after{ box-sizing: border-box; }
 
 html{
@@ -323,7 +356,24 @@ p{ color: var(--stone); margin: 0; }
   0%{ top: -40%; }
   100%{ top: 100%; }
 }
+.hero__actions {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+}
 
+.hero__actions .btn {
+  padding: 13px 20px;
+  white-space: nowrap;
+  font-size: 0.72rem;
+}
+
+@media (max-width: 900px) {
+  .hero__actions {
+    flex-wrap: wrap;
+  }
+}
 /* ---- Section shell ---- */
 section{ position: relative; }
 .section{
@@ -674,7 +724,128 @@ body {
 [data-theme="light"] .moon-icon { display: block; }
 
 /*////////////////////////////////////////////////////*/
+/*les avis */
+/* ==========================================================================
+   Client Reviews
+   ========================================================================== */
+.reviews__grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 8px;
+}
 
+.review{
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 32px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: border-color 0.4s ease, transform 0.4s ease;
+}
+.review:hover{
+  border-color: var(--gold-soft);
+  transform: translateY(-4px);
+}
+
+.review__head{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.review__avatar{
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--gold);
+  background: var(--gold-soft);
+  border: 1px solid var(--gold-soft);
+}
+
+.review__id{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-grow: 1;
+}
+
+.review__name{
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--cream);
+}
+
+.review__stars{
+  color: var(--gold);
+  font-size: 0.82rem;
+  letter-spacing: 2px;
+}
+
+.review__badge{
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone);
+  border: 1px solid var(--line-strong);
+  padding: 5px 10px;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.review__text{
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--cream);
+  opacity: 0.92;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.review__date{
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stone);
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+
+.reviews__cta{
+  text-align: center;
+  margin-top: 54px;
+}
+
+@media (max-width: 900px){
+  .reviews__grid{
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: var(--line, rgba(239, 232, 218, 0.14));
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--container, 1220px);
+}
+
+[data-theme="light"] .section-divider {
+  background: var(--line, rgba(31, 22, 16, 0.15));
+}
 /* ==========================================================================
    Responsive
    ========================================================================== */
