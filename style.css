@@ -325,6 +325,71 @@ p{ color: var(--stone); margin: 0; }
   gap: 18px;
   flex-wrap: wrap;
 }
+/* ==========================================================================
+   Hero — mobile fixes (< 768px)
+   ========================================================================== */
+@media (max-width: 768px){
+
+  /* 1. Hero height + background image framing */
+  .hero{
+    height: 100svh;
+    min-height: 100svh;
+    align-items: flex-start;
+    padding-top: 96px; /* clears the fixed header, no dead space beneath it */
+  }
+  .hero__bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: none; /* remove the desktop zoom that was blowing up the image */
+  }
+  .hero__content{
+    padding: 0 var(--gutter) 56px;
+    max-width: none;
+  }
+
+  /* 2. Nav controls (language / theme) — keep inside the container gutter */
+  .nav__panel{
+    padding-inline: var(--gutter);
+  }
+  .nav__controls{
+    margin-inline: 0;
+    gap: 10px;
+  }
+  .theme-toggle, .lang-toggle{
+    padding: 12px 10px;
+  }
+
+  /* 3. Action buttons — full-width, stacked, identical sizing */
+  .hero__actions{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .hero__actions .btn{
+    width: 100%;
+    height: 52px;
+    padding: 0 20px;
+    font-size: 0.74rem;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  /* 4. Typography — trim to fit without pushing content or adding scroll gaps */
+  .hero__title{
+    font-size: clamp(2.4rem, 11vw, 3.4rem);
+    margin-bottom: 16px;
+  }
+  .hero__tagline{
+    font-size: 1.05rem;
+    margin-bottom: 28px;
+  }
+  .hero__kicker{
+    margin-bottom: 14px;
+  }
+}
 .hero__scroll{
   position: absolute;
   right: var(--gutter);
